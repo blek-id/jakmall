@@ -1,0 +1,97 @@
+body
+    background-color: #fdf5d6
+    font-family: 'Open Sans', sans-serif
+
+.checkout-box
+    display: flex
+    flex: 0 1
+    flex-direction: column
+    background-color: #fdf5d6
+    justify-content: center
+    align-items: center
+    margin: auto
+    margin: 5%
+
+.progress-box
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: #fdf5d6 
+    text-align: center
+    width: 70%
+    margin: auto
+    margin-top: -4vh
+    padding-left: 5%
+    padding-right: 5%
+    height: 8vh
+    border-radius: 50px
+
+    @media (min-width: 768px)
+        width: 60%
+        height: 12vh
+        margin-top: -6vh
+
+    @media (min-width: 1024px)
+        width: 40%
+        height: 12vh
+        margin-top: -6vh
+
+.form-box
+    background-color: white
+    -webkit-box-shadow: 0px 2px 5px -1px rgba(231,166,26,0.5);
+    -moz-box-shadow: 0px 2px 5px -1px rgba(231,166,26,0.5);
+    box-shadow: 0px 2px 5px -1px rgba(231,166,26,0.5);
+    height: 80vh
+    width: 100%
+
+.progress-item
+    display: inline-flex
+    flex: 1
+    align-items: center
+    justify-content: center
+
+.progress-item span 
+    font-size: 10px
+    color: #ffa642
+    
+    @media (min-width: 768px)
+        font-size: 1rem
+        font-weight: bold
+
+    @media (min-width: 1024px)
+        font-size: 1.2rem
+        font-weight: bold
+
+.progress-item-separator
+    color: #ffa642
+    flex: 1
+
+.circle
+    display: inline-flex
+    padding: 2px
+    border-radius: 50%
+    margin-right: 2px
+    color: #ffa642
+    background: #ffe3b9
+    text-align: center
+    align-items: center
+    justify-content: center
+    vertical-align: middle
+    min-width 1em
+    font-size: 10px
+    font-weight: bold
+    
+    @media (min-width: 768px)
+        font-size: 1rem
+        padding: 5px
+        margin-right: 5px
+        
+    @media (min-width: 1024px)
+        font-size: 1.2rem
+        padding: 8px
+        margin-right: 8px
+
+.circle:before
+    float: left
+    width: auto
+    padding-bottom: 100%

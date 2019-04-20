@@ -1,0 +1,181 @@
+.delivery-header-box
+    flex: 2
+
+.delivery-header-container
+    display: flex
+    flex-direction: column
+    
+    @media (min-width: 768px)
+        flex-direction: row
+        justify-content: center
+        align-items: center
+
+.summary-box
+    flex: 2
+    min-height: 150px
+
+.summary-detail-text
+    margin-bottom: 15px
+
+.pricing-box
+    display: flex
+    flex-direction: column
+    flex: 1
+    margin-bottom: 15px
+
+.column-right-text
+    float: right
+    font-weight: bold
+
+.input-field
+    position: relative
+    border: 0
+    height: 50px
+    width: 100%
+    padding-left: 10px
+    font-size: 0.9rem
+    vertical-align: bottom
+    
+    @media (min-width: 768px)
+        height: 60px
+
+        
+    @media (min-width: 1024px)
+        height: 80px
+    
+.input-field::placeholder
+    opacity: 0
+
+.input-field:focus + .input-field-placeholder,
+.input-field:not(:placeholder-shown) + .input-field-placeholder
+    font-size: 75%
+    transform: translate3d(0, -120%, 0)
+    opacity: 1
+
+    @media (min-width: 768px)
+        transform: translate3d(0, -150%, 0)
+
+    @media (min-width: 1024px)
+        transform: translate3d(0, -160%, 0)
+
+
+.input-field-placeholder
+    position: absolute
+    left: 11.5%
+    transition: all 200ms
+    opacity: 0.5
+
+    @media (min-width: 768px)
+        left: 6.5%
+
+        
+
+.input-field-placeholder-right
+
+    @media (min-width: 768px)
+        left: 33.5%
+
+.input-field-placeholder__textarea
+    line-height: 65%
+
+.input-field:focus + .input-field-placeholder__textarea,
+.input-field:not(:placeholder-shown) + .input-field-placeholder__textarea
+    font-size: 75%
+    transform: translate3d(0, -350%, 0)
+    opacity: 1
+
+    @media (min-width: 768px)
+        transform: translate3d(0, -430%, 0)
+        
+    @media (min-width: 1024px)
+        transform: translate3d(0, -850%, 0)
+
+.input-field:focus
+    outline: none
+    
+.input-field__textarea
+    margin-top: 10%
+    resize: none
+
+    @media (min-width: 768px)
+        margin-top: 3%
+        
+    @media (min-width: 1024px)
+        height: 120px
+        margin-top: 5%
+
+.form-control__invalid
+    border: 1px solid #ff811a !important
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(255,129,26,1) !important
+    -moz-box-shadow: 0px 1px 2px 0px rgba(255,129,26,1) !important
+    box-shadow: 0px 1px 2px 0px rgba(255,129,26,1) !important
+
+.form-control__valid
+    border: 1px solid #1ad86d !important
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(26,216,109,1) !important
+    -moz-box-shadow: 0px 1px 2px 0px rgba(26,216,109,1) !important
+    box-shadow: 0px 1px 2px 0px rgba(26,216,109,1) !important
+
+.active-field
+    outline: none 
+    margin-top: -16px
+    font-size: 0.8rem
+
+.form-group
+    display: flex
+    flex-direction: column
+    
+    @media (min-width: 768px)
+        flex-direction: row
+        margin-bottom: 15px
+
+.form-group-checkbox
+    display: flex
+
+.form-control
+    display: flex
+    flex: 1
+    justify-content: center
+    align-items: center
+    margin-bottom: 15px
+    @media (min-width: 768px)
+        margin: 0 5px
+
+.form-control__neutral
+    border: 1px solid #e3e3e3
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(227,227,227,1)
+    -moz-box-shadow: 0px 1px 2px 0px rgba(227,227,227,1)
+    box-shadow: 0px 1px 2px 0px rgba(227,227,227,1)
+
+.icon_success 
+    color: #1ad86d
+
+.icon
+    padding: 8px
+    text-align: center
+
+.icon_fail
+    color: #ff811a
+
+.header-text
+    color: #ffa642
+
+.header-text__underline
+    border-bottom: 4px solid #eff0ef
+    display: inline-block
+    line-height: 0.95
+    
+
+.button-primary
+    background-color: #ffa642
+    color: white
+    border: 0
+    padding: 20px 10px
+    border-radius: 5px
+    width: 100%
+
+.text-valid
+    color: #1ad86d
+
+.text-invalid
+    color: #ff811a

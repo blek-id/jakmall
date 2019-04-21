@@ -1,18 +1,32 @@
 body
     background-color: #fdf5d6
     font-family: 'Open Sans', sans-serif
+    color: #707070
 
-.checkout-box
+.checkout
     display: flex
-    flex: 0 1
     flex-direction: column
     background-color: #fdf5d6
-    justify-content: center
-    align-items: center
     margin: auto
     margin: 5%
+    background-color: white
+    -webkit-box-shadow: 0px 2px 5px -1px rgba(231,166,26,0.5);
+    -moz-box-shadow: 0px 2px 5px -1px rgba(231,166,26,0.5);
+    box-shadow: 0px 2px 5px -1px rgba(231,166,26,0.5);
+    height: auto
+    border-radius: 5px
+    padding: 0 3%
+    
+.content
+    display: flex
+    flex-direction: column
+    padding: 3% 0 0
 
-.progress-box
+    @media (min-width: 1024px)
+        flex-direction: row
+        padding: 1% 0 3% 0
+
+.progress
     display: flex
     align-items: center
     justify-content: space-between
@@ -20,61 +34,42 @@ body
     text-align: center
     width: 70%
     margin: auto
-    margin-top: -4vh
-    padding-left: 5%
-    padding-right: 5%
-    height: 8vh
-    border-radius: 50px
+    margin-top: -5%
+    margin-bottom: 0
+    padding: 3.5% 5% 2.5% 5%
+    border-radius: 5vw
 
     @media (min-width: 768px)
         width: 60%
-        height: 12vh
-        margin-top: -6vh
 
     @media (min-width: 1024px)
         width: 40%
-        height: 12vh
-        margin-top: -6vh
 
-.layout-box
-    background-color: white
-    -webkit-box-shadow: 0px 2px 5px -1px rgba(231,166,26,0.5);
-    -moz-box-shadow: 0px 2px 5px -1px rgba(231,166,26,0.5);
-    box-shadow: 0px 2px 5px -1px rgba(231,166,26,0.5);
-    height: auto
-    border-radius: 5px
-    width: 100%
-    
-    @media (min-width: 768px)
-        height: 70vh
-
-.progress-item
+.progress--item
     display: inline-flex
     flex: 1
     align-items: center
     justify-content: center
-
-.progress-item span 
-    font-size: 10px
-    color: #ffa642
+    font-size: 3vw
     
     @media (min-width: 768px)
-        font-size: 1rem
-        font-weight: bold
+        font-size: 2vw
 
     @media (min-width: 1024px)
-        font-size: 1.2rem
-        font-weight: bold
+        font-size: 1.5vw
 
-.progress-item-separator
+.progress--item span 
+    color: #ffa642
+
+.progress--separator
     color: #ffa642
     flex: 1
 
 .circle
     display: inline-flex
-    padding: 2px
+    padding: 0.5vw
     border-radius: 50%
-    margin-right: 2px
+    margin-right: 0.5vw
     color: #ffa642
     background: #ffe3b9
     text-align: center
@@ -82,24 +77,52 @@ body
     justify-content: center
     vertical-align: middle
     min-width 1em
-    font-size: 10px
     font-weight: bold
-    
-    @media (min-width: 768px)
-        font-size: 1rem
-        padding: 5px
-        margin-right: 5px
-        
-    @media (min-width: 1024px)
-        font-size: 1.2rem
-        padding: 8px
-        margin-right: 8px
 
 .circle__active
     color: white
     background: #ffa642
 
-.circle:before
-    float: left
-    width: auto
-    padding-bottom: 100%
+// .circle:before
+//     float: left
+//     width: auto
+//     padding-bottom: 100%
+
+.content--back
+    flex: 1
+
+.content--body
+    flex: 3
+
+    @media (min-width: 1024px)
+        display:flex
+        flex-direction: column
+    
+.content--separator
+    flex: 1
+    border-bottom: 5px solid #fff4e9
+    border-radius: 5px
+    
+    @media (min-width: 1024px)
+        max-width: 5px
+        background-color: #fff4e9
+
+.content--summary
+    flex: 1
+    display: flex
+    flex-direction: column
+    
+    @media (min-width: 1024px)
+        flex: 1
+        margin-left: 15px
+
+.container
+    display: flex
+    flex-direction: column
+
+.detail-container
+    display: flex
+    flex-direction: column
+    
+    @media (min-width: 768px)
+        flex: 5

@@ -1,37 +1,31 @@
-
-.container
-    display: flex
-    flex-direction: column
-    margin: 10px
-
-.detail-container
-    display: flex
-    flex-direction: column
-    
-    @media (min-width: 768px)
-        flex: 5
-
-.summary-container
-    display: flex
-    flex-direction: column
-    
-    @media (min-width: 768px)
-        flex: 3
-.separator-line
-    border-bottom: 5px solid #fff4e9
-    border-radius: 5px
-    
-    @media (min-width: 768px)
-        flex: 1
-        max-width: 5px
-        background-color: #fff4e9
-        margin: 0 15px
-
 .back-text
     margin-left: 10px
 
-.content-box
+.header-text
+    color: #ffa642
+    @media (min-width: 1024px)
+        font-size: 2.5vw
+
+.header-text__summary
+    margin-bottom: 0
+    @media (min-width: 1024px)
+        font-size: 2vw
+
+.header-text__underline
+    border-bottom: 4px solid #eff0ef
+    display: inline-block
+    line-height: 0.95
+    width: 100%
+
+    @media (min-width: 1024px)
+        width: auto
+        padding-right: 30px
+
+.navigator
+    padding-top: 3%
+    width: fit-content
+    height: auto
+    cursor: pointer
+
     @media (min-width: 768px)
-        display:flex
-        flex-direction: row
-        height: 60vh
+        padding-top: 1%
